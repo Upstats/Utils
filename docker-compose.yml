@@ -1,0 +1,7 @@
+services:
+  worker:
+      build:
+        context: https://github.com/Upstats/Worker.git#master
+      restart: on-failure
+      env_file:
+        - config.env
